@@ -1,0 +1,1 @@
+<img src="/images/heklab-logo.png" width="64" height="64">
