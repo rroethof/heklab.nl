@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
+use Telegram;
 
 use App\Models\Signup;
 use App\Models\User;
@@ -167,6 +168,11 @@ class SignupController extends Component
             ]);
 
             DB::delete('delete from signup where email = ?', [$request->email]);
+
+            Telegram::sendMessage([
+                'chat_id' => env('TELEGRAM_CHANNEL'),
+                'text' => 'Mensen, we mogen '. $request->name .' welkom heten als nieuwe deelnemer!'
+            ]);
 
             return redirect('/admin/signups');
 
