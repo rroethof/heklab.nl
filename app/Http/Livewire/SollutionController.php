@@ -16,11 +16,21 @@ use App\Models\Instance;
 use App\Models\Instancehistory;
 use App\Models\Flag;
 
+use Illuminate\Support\Facades\Storage;
+
 class SollutionController extends Component
 {
     public function render()
     {
-        $sollutions = Sollution::orderBy('title', 'DESC')->paginate(25);
-        return view('livewire.sollutions',compact('sollutions'));
+        $files = Storage::disk('writeups')->directories('/');
+        //dd($files);
+/*
+array:3 [▼
+  0 => "spring.heklab.lan"
+  1 => "summer.heklab.lan"
+  2 => "winter.heklab.lan"
+]
+*/
+        return view('livewire.sollutions',compact('files'));
     }
 }

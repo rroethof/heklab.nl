@@ -56,7 +56,13 @@
           <tbody class="bg-white divide-y divide-gray-200">
 
 @foreach($instances as $instance)
+@if( $instance->capturedflags == '0' )
+            <tr class="bg-red-50">
+@elseif( $instance->availableflags == '0' )
+            <tr class="bg-green-50">
+@else
             <tr>
+@endif  
               <td class="px-6 py-4 whitespace-nowrap">
                 <div class="flex items-center">
                   <div class="flex-shrink-0 h-10 w-10">

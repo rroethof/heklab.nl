@@ -2,6 +2,9 @@
 /public/hot
 /public/storage
 /storage/*.key
+/storage/app/heklab-writeups
+/storage/app/heklab-writeups/*
+/storage/app/heklab-writeups/writeups/*
 /vendor
 .env
 .env.backup

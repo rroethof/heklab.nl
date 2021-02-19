@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
+        "arcanedev/laravel-markdown": "^5.0",
         "barryvdh/laravel-debugbar": "^3.5",
         "beyondcode/laravel-websockets": "^1.8",
         "corsinvest/cv4pve-api-php": "^2.4",

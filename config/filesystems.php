@@ -55,6 +55,11 @@ return [
             'visibility' => 'public',
         ],
 
+        'writeups' => [
+            'driver' => 'local',
+            'root' => storage_path('app/heklab-writeups/writeups'),
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
