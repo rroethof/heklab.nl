@@ -144,7 +144,7 @@
                                 <button @click={show=false} class="fill-current h-6 w-6 absolute right-0 top-0 m-6 font-3xl font-bold">&times;</button>
                                 <div class="px-6 py-3 text-xl border-b font-bold">Info for {{ $instance->name }}</div>
                                 <div class="p-6 flex-grow">
-                                    <p>{!! nl2br(e($instance->description))!!}</p>
+                                    <p>{!! $instance->description !!}</p>
                                 </div>
                                 <div class="px-6 py-3 border-t">
                                     <div class="flex justify-end">

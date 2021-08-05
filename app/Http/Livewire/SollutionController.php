@@ -23,14 +23,20 @@ class SollutionController extends Component
     public function render()
     {
         $files = Storage::disk('writeups')->directories('/');
-        //dd($files);
-/*
-array:3 [▼
-  0 => "spring.heklab.lan"
-  1 => "summer.heklab.lan"
-  2 => "winter.heklab.lan"
-]
-*/
         return view('livewire.sollutions',compact('files'));
     }
+
+    public function show($title)
+    {
+      $file = "$title/readme.md";
+
+      //if (Storage::disk('writeups')->exists('$title/readme.me')) {
+        $content = Storage::disk('writeups')->get($file);
+      //} else {
+      //  $content = '404 not found.';
+      //} 
+      return view('livewire.sollution',compact('title','content'));
+    }
+
+
 }

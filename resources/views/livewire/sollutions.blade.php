@@ -32,10 +32,15 @@
                                         <div class="leading-5 text-gray-900">{{ $node }}</div>
                                     </td>
                                     <td class="px-6 py-4 whitespace-no-wrap">
-                                        <div class="leading-5 text-gray-900">{{ $node }}/readme.md</div>
+                                        <div class="leading-5 text-gray-900"><a href="/sollutions/{{ $node }}">{{ $node }}/readme.md</a></div>
                                     </td>
                                 </tr>
                                 <!-- More rows... -->
 @endforeach
+                            </tbody>
+                            </table>
+                        </div>
+                        <br>
+                        To add writeups, see <a href="https://github.com/hvanderlaan/heklab-writeups" target="_blank">https://github.com/hvanderlaan/heklab-writeups</a>
     </div>
 </x-app-layout>
