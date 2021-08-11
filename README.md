@@ -52,11 +52,11 @@ Hardware: [Hetzner SB49](https://www.hetzner.com/sb?search=sb49)
 
 ## Contributing
 
-Thank you for considering contributing to the HekLab initiative! The contribution guide can be found in the [documentation](https://heklab.nl/docs/contributions).
+Thank you for considering contributing to the HekLab initiative! The contribution guide can be found in the [documentation](https://github.com/rroethof/heklab.nl/wiki/Contributing).
 
 ## Code of Conduct
 
-In order to ensure that the HekLab initiative is welcome to all accepted contributors, please review and abide by the [Code of Conduct](https://heklab.nl/docs/contributions#code-of-conduct).
+In order to ensure that the HekLab initiative is welcome to all accepted contributors, please review and abide by the [Code of Conduct](https://github.com/rroethof/heklab.nl/wiki/Code-of-conduct).
 
 ## Security Vulnerabilities
 
